@@ -1,0 +1,168 @@
+*{
+    background-color: black;
+}
+
+.proyectos{
+    background-image: url("../../../../assets/images/fondos/fondoTwo.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.section-2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.boxSection-2{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    flex-direction: column;
+    background-color: transparent;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+}
+
+.boxSection-2-box{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background: transparent;
+}
+
+.boxImagen{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxImagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.boxContentProyect{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.boxContentProyect p,h3{
+    color: white;
+    font-size: 20px;
+}
+
+.boxContentProyect h3{
+    color: white;
+    font-size: 40px;
+}
+.infoProyect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+}
+
+.infoProyect p, h3{
+    background: transparent;
+}
+
+.Tecnologys{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: transparent;
+}
+
+.HoverboxTecno{
+    width: auto;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow:  3px 3px 5px #000000, -3px -3px 5px #000000;
+    background: linear-gradient(145deg, #f9f7f759, #d2d0d027);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.HoverboxTecno:hover{
+    transform: scale(1.04);
+}
+
+.HoverboxTecno p{
+    margin: 0;
+}
+
+.proyectoTwo{
+    flex-direction: row-reverse;
+}
+
+.btnVerMas{
+    width: auto;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow:  3px 3px 5px #000000, -3px -3px 5px #000000;
+    background: linear-gradient(145deg, #f9f7f759, #d2d0d027);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.2s;
+    position: relative;
+    bottom: 0;
+}
+
+.btnVerMas:hover{
+    transform: scale(1.04);
+}
+
+.box-2{
+    flex-direction: row-reverse;
+}
+
+.info-2{
+    align-items: flex-end !important;
+}
+
+.info-2 p{
+    text-align: end;
+}
+
+.tec2{
+    justify-content: flex-end;
+}
+
+.tecnoText{
+    background: transparent;
+}

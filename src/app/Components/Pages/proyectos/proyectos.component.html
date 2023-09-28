@@ -1,0 +1,25 @@
+<div class="proyectos">
+    <section class="section-1"></section>
+    <section class="section-2">
+        <div class="boxSection-2">
+          <div class="boxSection-2-box" *ngFor="let proyecto of proyectos">
+            <div class="boxImagen">
+              <img src="{{proyecto.image}}" alt="">
+            </div>
+            <div class="boxContentProyect ">
+              <div class="infoProyect">
+                <h3>{{proyecto.name}}</h3>
+                <p>{{proyecto.description}}</p>
+              </div>
+              <div class="Tecnologys" >
+                <div class="HoverboxTecno" *ngFor="let tecnology of proyecto.tecnologys">
+                  <p class="tecnoText">{{tecnology}}</p>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+    </section>
+    <section class="section-3"></section>
+
+</div>

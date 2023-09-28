@@ -1,0 +1,140 @@
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    z-index: 5;
+    position: fixed;
+    transition: 1s;
+}
+
+.title{
+    font-size: 50px;
+    color:#f9f7f7;
+    opacity: 1;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0;
+}
+.title:hover{
+    opacity: 1;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+.boxHeader-1{
+    display: flex;
+    align-items: center;
+}
+
+.boxHeader-2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxHeader-2 button{
+
+    height: 50px;
+    width: 120px;
+    border: 4px solid #f9f7f7;;
+    color: #ebf8f0;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 3;
+}
+
+
+.boxHeader-2 button:before {
+    content: "INICIO";
+    position: absolute;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(250, 250, 250);
+    transition: .2s ease;
+    z-index: 2;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+.boxHeader-2 .proyects:before {
+    content: "PROYECTOS" !important;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+
+.boxHeader-2 button:hover{
+    color: black;
+    opacity: 0.9;
+}
+
+.boxHeader-2 button:hover:before {
+    top: 0;
+    color: black;
+}
+
+
+@media screen and (max-width: 920px) {
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+    .boxHeader-2 button{
+        height: 40px;
+        width: 120px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .title{
+        font-size: 35px;
+    }
+    header{
+        flex-direction: column;
+    }
+}
