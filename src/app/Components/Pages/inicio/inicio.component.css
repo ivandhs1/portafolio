@@ -6,14 +6,15 @@
 }
 
 .section-1{
-
-    height: 120vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 .boxSection-1-1{
@@ -489,4 +490,65 @@
 
 .input:hover{
     background-color: rgb(245, 245, 245) !important;
+}
+
+
+@media screen and (max-width:800px){
+    .boxSection-1-1{
+        width: 450px;
+        height: 610px;
+    }
+
+    .boxSection-1-1-1{
+        flex-direction: column;
+        gap: 2rem;
+        height: 530px;
+    }
+    .textBoxSection-1-1-1{
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .boxSection-2-1{
+        width: 450px;
+        height: 400px;
+    }
+
+    .boxSection-2-1-1{
+        flex-direction: column;
+        gap: 2rem;
+        height: 320px;
+    }
+    .textBoxSection-1-1-1{
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .boxHOne{
+        width: 100%;
+    }
+    .boxHTwo{
+        width: 100%;
+    }
+    .boxHThree{
+        width: 100%;
+    }
+
+    .boxSection-4-1{
+        height: 520px;
+        width: 420px;
+    }
+
+    .formContacto{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .proyect{
+        width: 400px;
+        height: 400px;
+    }
+
 }
