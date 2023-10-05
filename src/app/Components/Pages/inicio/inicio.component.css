@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
 }
 
 .section-1{
@@ -498,7 +499,6 @@
         width: 450px;
         height: 610px;
     }
-
     .boxSection-1-1-1{
         flex-direction: column;
         gap: 2rem;
@@ -509,12 +509,10 @@
         text-align: center;
         font-size: 20px;
     }
-
     .boxSection-2-1{
         width: 450px;
         height: 400px;
     }
-
     .boxSection-2-1-1{
         flex-direction: column;
         gap: 2rem;
@@ -525,7 +523,6 @@
         text-align: center;
         font-size: 20px;
     }
-
     .boxHOne{
         width: 100%;
     }
@@ -535,20 +532,82 @@
     .boxHThree{
         width: 100%;
     }
-
     .boxSection-4-1{
         height: 520px;
         width: 420px;
     }
-
     .formContacto{
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     .proyect{
         width: 400px;
         height: 400px;
     }
+    .textBoxSection-2-1-1{
+        font-size: 20px;
+    }
+    .boxSection-2-1{
+        height: 360px;
+    }
+    .boxSection-2-1-1{
+        height: 280px;
+    }
 
+}
+
+
+@media screen and (max-width:500px){
+    .boxSection-1-1{
+        height: 560px;
+        width: 380px;
+    }
+    .boxSection-1-1-1{
+        height: 500px;
+        padding: 0;
+        padding-top: 25px;
+        justify-content: none;
+        gap: 0;
+    }
+    .boxSection-1-1-2{
+        height: 60px;
+    }
+    .boxSection-2-1{
+        height: 380px;
+        width: 380px;
+    }
+    .boxSection-2-1-1{
+        height: 320px;
+    }
+    .boxSection-2-1-2{
+        height: 60px;
+    }
+    .boxHerramienta{
+        width: 150px;
+        gap: 3px;
+    }
+    .boxHerramienta p{
+        font-size: 20px;
+    }
+    .boxHerramienta img{
+        width: 30px;
+        height: 30px;
+    }
+    .boxHerramientas{
+        width: 100%;
+        padding: 0;
+    }
+    .boxLenguajes{
+        width: 100%;
+        padding: 0;
+    }
+    .boxFrameworks{
+        width: 100%;
+        padding: 0;
+    }
+
+    .boxSection-4-1{
+        height: 500px;
+    width: 350px;
+    }
 }
