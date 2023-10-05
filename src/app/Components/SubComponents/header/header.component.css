@@ -138,3 +138,13 @@ header{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:420px){
+    .title{
+        font-size: 26px;
+    }
+    .boxHeader-2 button{
+        height: 35px;
+        width: 110px;
+    }
+}

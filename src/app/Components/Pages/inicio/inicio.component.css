@@ -411,9 +411,9 @@
 
 .section-4{
     width: 100%;
-    height: 100vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,6 +608,41 @@
 
     .boxSection-4-1{
         height: 500px;
-    width: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .boxSection-1-1{
+        height: 520px;
+        width: 300px;
+    }
+    .boxSection-1-1-1{
+        height: 460px;
+    }
+    .boxSection-1-1-2{
+        gap: 20px;
+    }
+    .textBoxSection-1-1-1{
+        font-size: 17px;
+    }
+    .textBoxSection-2-1-1{
+        font-size: 17px;
+    }
+
+    .boxSection-2-1{
+        height: 360px;
+        width: 300px;
+    }
+
+    .boxSection-2-1-1{
+        height: 300px;
+    }
+    .boxSection-2-1-2{
+        gap: 20px;
+    }
+    .proyect{
+        width: 340px;
+        height: 340px;
     }
 }
