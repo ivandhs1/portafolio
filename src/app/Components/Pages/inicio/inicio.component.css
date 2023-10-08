@@ -646,3 +646,18 @@
         height: 340px;
     }
 }
+
+@media screen and (max-width:340px){
+    .boxHerramientas{
+        gap: 8px;
+    }
+    .boxLenguajes{
+        gap: 8px;
+    }
+    .boxFrameworks{
+        gap: 8px;
+    }
+    .boxSection-4-1{
+        width: 300px;
+    }
+}

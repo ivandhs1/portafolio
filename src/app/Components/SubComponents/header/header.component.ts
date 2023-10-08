@@ -15,13 +15,13 @@ export class HeaderComponent implements OnInit {
   color:string='';
   header:any = document.querySelector('header')
 
-/*   @HostListener('window:scroll', ['$event']) 
+  @HostListener('window:scroll', ['$event']) 
   onScrollEvent($event:any){
 
     if(window.scrollY > 360){
-      this.color='rgba(24, 24, 77, 70)'    
+      this.color='#010122'    
     }else{
       this.color='transparent'
     }
-  }  */
+  } 
 }

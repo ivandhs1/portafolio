@@ -31,7 +31,7 @@
     gap: 6vw;
     flex-direction: column;
     background-color: transparent;
-    padding-top: 7vw;
+    padding-top: 100px;
     padding-bottom: 7vw;
 }
 
@@ -165,4 +165,64 @@
 
 .tecnoText{
     background: transparent;
+}
+
+@media screen and (max-width:1300px) {
+    .boxSection-2{
+        width: 100%;
+    }
+    .boxSection-2-box{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .boxImagen{
+        width: 50%;
+    }
+
+    .boxSection-2{
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .boxImagen{
+        width: 500px;
+    }
+
+    .boxSection-2-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .boxContentProyect{
+        width: 500px;
+    }
+
+    .infoProyect p{
+        text-align: justify;
+    }
+    .boxSection-2{
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .boxImagen{
+        width: 400px;
+    }
+    .boxContentProyect{
+        width: 400px;
+    }
+
+    .infoProyect p{
+        font-size: 17px;
+    }
+
+    .infoProyect h3{
+        font-size: 30px;
+    }
 }
