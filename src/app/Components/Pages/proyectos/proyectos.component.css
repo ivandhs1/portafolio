@@ -3,7 +3,7 @@
 }
 
 .proyectos{
-    background-image: url("../../../../assets/images/fondos/fondoTwo.png");
+    background-image: url("../../../../assets/images/fondos/fondo2.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -225,4 +225,15 @@
     .infoProyect h3{
         font-size: 30px;
     }
+}
+
+
+@media screen and (max-width:420px) {
+    .boxImagen{
+        width: 300px;
+    }
+    .boxContentProyect{
+        width: 300px;
+    }
+
 }
