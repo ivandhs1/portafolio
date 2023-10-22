@@ -10,16 +10,22 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("inicia");
+    
   }
 
   color:string='';
-  header:any = document.querySelector('header')
 
   @HostListener('window:scroll', ['$event']) 
   onScrollEvent($event:any){
+    console.log("holaaa desde header");
+    console.log(window.scrollY);
+    
 
-    if(window.scrollY > 360){
-      this.color='#010122'    
+    if(window.scrollY > 300){
+      console.log("arriba de 300");
+      
+      this.color='#010128'    
     }else{
       this.color='transparent'
     }
