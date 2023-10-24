@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
     if(window.scrollY > 300){
       console.log("arriba de 300");
       
-      this.color='#010128'    
+      this.color='#000000'    
     }else{
       this.color='transparent'
     }
