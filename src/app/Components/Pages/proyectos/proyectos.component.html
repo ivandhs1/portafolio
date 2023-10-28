@@ -1,25 +1,27 @@
 <div class="proyectos">
-    <section class="section-1"></section>
     <section class="section-2">
-        <div class="boxSection-2">
-          <div class="boxSection-2-box" *ngFor="let proyecto of proyectos">
-            <div class="boxImagen">
-              <img src="{{proyecto.image}}" alt="">
+      <h2 class="title">Mis Proyectos</h2>
+      <div class="boxSearch">
+        <input type="text" class="inputSearch">
+        <div class="imageSearch">
+          <img src="../../../../assets/images/search.svg" alt="">
+        </div>
+      </div>
+      <div class="boxProyects">
+        <div class="proyect" *ngFor="let proyect of proyectos">
+          <img src="{{proyect.image}}" alt="">
+          <div class="card-display .blur-in">
+            <h3 class="titleProyect">{{proyect.name}}</h3>
+          </div>
+          <div class="card-hover .blur-in">
+            <h3 class="titleProyect">{{proyect.name}}</h3>
+            <div class="box-tecs">
+              <div class="HoverboxTecno" *ngFor="let tecnology of proyect.tecnologys">
+                <p>{{tecnology}}</p>
+              </div>
             </div>
-            <div class="boxContentProyect ">
-              <div class="infoProyect">
-                <h3>{{proyecto.name}}</h3>
-                <p>{{proyecto.description}}</p>
-              </div>
-              <div class="Tecnologys" >
-                <div class="HoverboxTecno" *ngFor="let tecnology of proyecto.tecnologys">
-                  <p class="tecnoText">{{tecnology}}</p>
-                </div>
-              </div>
-            </div>    
           </div>
         </div>
+      </div>
     </section>
-    <section class="section-3"></section>
-
 </div>
