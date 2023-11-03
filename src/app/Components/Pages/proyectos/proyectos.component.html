@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="boxProyects">
-        <div class="proyect" *ngFor="let proyect of proyectos">
+        <div class="proyect" *ngFor="let proyect of proyectos" data-aos="fade-up" [routerLink]="['/proyectos', proyect.id]">
           <img src="{{proyect.image}}" alt="">
           <div class="card-display .blur-in">
             <h3 class="titleProyect">{{proyect.name}}</h3>

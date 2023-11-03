@@ -22,9 +22,12 @@ header{
     transition: 0.2s;
     cursor: pointer;
     margin: 0;
+    transition: 0.3S
 }
 .title:hover{
     opacity: 1;
+    transform: scale(1.03);
+
 }
 
 .logo{
@@ -38,6 +41,7 @@ header{
 
 .logo:hover{
     opacity: 1;
+    transform: scale(1.03);
 }
 
 .boxHeader-1{
