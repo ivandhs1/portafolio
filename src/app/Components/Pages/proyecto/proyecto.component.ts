@@ -1,6 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { ProyectosService } from 'src/app/Services/proyectos.service';
 import * as AOS from 'aos';
 
@@ -14,12 +14,12 @@ export class ProyectoComponent implements OnInit {
   private id:any = "";
   public proyect:any;
 
-  constructor(private _route: ActivatedRoute, private proyectService:ProyectosService, private viewportScroller: ViewportScroller) {}
+  constructor(private _route: ActivatedRoute, private route: Router,private proyectService:ProyectosService, private viewportScroller: ViewportScroller) {}
 
   ngOnInit(): void {
     AOS.init();
     this.id = this._route.snapshot.paramMap.get("id");
-    this.obtenerProyect();
+    this.obtenerProyect(this.id);
     this.scrollTop();
   }
 
@@ -29,7 +29,23 @@ export class ProyectoComponent implements OnInit {
       top:0
     })
   }
-  obtenerProyect(){
-    this.proyect = this.proyectService.getOneProyect(this.id);
+
+  obtenerProyect(id:number){
+    this.proyect = this.proyectService.getOneProyect(id);
   }
+
+  next(idP: number){
+    let length: number = this.proyectService.obtenerLength();
+
+    if(idP==length){
+      this.obtenerProyect(1);
+      this.route.navigate(['/proyectos', 1 ]);
+      this.scrollTop();
+    }else{
+      this.obtenerProyect(idP+1);
+      this.route.navigate(['/proyectos', idP+1 ]);
+      this.scrollTop();
+    }
+  }
+
 }

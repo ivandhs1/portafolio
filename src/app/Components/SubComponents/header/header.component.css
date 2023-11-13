@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 100px;
+    height: 110px;
     display: flex;
     align-items: center;
     position: absolute;
@@ -17,7 +17,7 @@ header{
 
 .title{
     font-size: 50px;
-    color:#f9f7f7;
+    color: rgba(245, 245, 245, 0.9);
     opacity: 1;
     transition: 0.2s;
     cursor: pointer;
@@ -83,6 +83,26 @@ header{
     background: linear-gradient(145deg,rgba(0, 0, 0, 0.829)#01c9ae);
 }
 
+.btnCV{
+    width: 48px !important;
+    height: 48px !important;
+    border: 1px solid #00fff26c;
+    background: linear-gradient(100deg,rgb(0 0 0 / 60%),#01c9ae);
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.btnCV:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+    background: linear-gradient(145deg,rgba(0, 0, 0, 0.829)#01c9ae);
+}
+
+.btnCV img{
+    width: 100%;
+    height: 100%;
+}
+
 
 
 @media screen and (max-width: 920px) {
@@ -92,6 +112,23 @@ header{
     }
     .title{
         font-size: 40px;
+    }
+
+    .btnCV{
+        width: 45px;
+        height: 45px;
+    }
+
+    .boxHeader-2 a{
+        width: 120px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    header{
+        flex-direction: column;
+        height: 140px;
     }
 }
 
@@ -104,10 +141,19 @@ header{
         font-size: 30px;
     }
 
+    .boxHeader-2{
+        margin-top: 1rem;
+    }
+
     .boxHeader-2 a{
         height: 40px;
         width: 120px;
         padding: 0;
+    }
+
+    .btnCV{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -117,7 +163,7 @@ header{
     }
     header{
         flex-direction: column;
-        height: 120px;
+        height: 140px;
     }
 }
 
@@ -125,6 +171,11 @@ header{
     .title{
         font-size: 24px;
     }
+
+    .boxHeader-2{
+        margin-top: 1rem;
+    }
+
     .boxHeader-2 a{
         height: 35px;
         width: 110px;
@@ -132,6 +183,11 @@ header{
     .logo{
         height: 45px;
         width: 45px;
+    }
+
+    .btnCV{
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -144,6 +200,16 @@ header{
         width: 110px;
     }
 
+    .boxHeader-2 a{
+        height: 28px;
+        width: auto;
+        padding: 6px;
+    }
+
+    .btnCV{
+        height: 28px;
+        width: auto;
+    }
 
 
 }

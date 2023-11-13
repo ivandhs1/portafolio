@@ -23,7 +23,7 @@
     box-shadow:  3px 3px 5px #000000, -3px -3px 5px #000000;
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     border-radius: 5px;
     backdrop-filter: blur(10px);
 }
@@ -89,7 +89,7 @@
     box-shadow:  3px 3px 5px #000000, -3px -3px 5px #000000;
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     border-radius: 5px;
     backdrop-filter: blur(10px);
 }
@@ -138,7 +138,7 @@
 
 .titleHabilidades{
     font-size: 40px;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     margin-bottom: 1rem;
 }
 
@@ -156,7 +156,7 @@
 
 .boxHerramientas p{
     font-size: 35px;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     margin: 0;
 }
 
@@ -174,7 +174,7 @@
 
 .boxLenguajes p{
     font-size: 35px;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     margin: 0;
 }
 
@@ -192,7 +192,7 @@
 
 .boxFrameworks p{
     font-size: 35px;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     margin: 0;
 }
 
@@ -257,7 +257,7 @@
 .section-3{
     background-image: url(../../../../assets/images/fondos/fondo1.jpg);
     background-size: 100% 100%;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     width: 100%;
     height: auto;
     display: flex;
@@ -340,7 +340,7 @@
 .HoverboxTecno{
     width: auto;
     height: 50px;
-    color: white;
+    color: rgba(245, 245, 245, 0.9);
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -372,7 +372,7 @@
 }
 
 .titleProyect{
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     background-color: transparent;
     margin: 0;
 }
@@ -394,7 +394,7 @@ p{
     text-align: center;
     text-decoration: none;
     background: linear-gradient(100deg, #929292fd, #494949);
-    color: #ffffff;
+    color: rgba(245, 245, 245, 0.9);
     margin: 0;
     display: flex;
     justify-content: center;
@@ -402,7 +402,7 @@ p{
 }
 
 .btnProyectos:hover{
-    color: rgb(255, 255, 255);
+    color: rgba(245, 245, 245, 0.9);
     opacity: 0.9;
     transform: scale(1.1);
     background: linear-gradient(100deg, #929292fd, #303030);
@@ -435,7 +435,7 @@ p{
     box-shadow:  3px 3px 5px #000000, -3px -3px 5px #000000;
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.9);
     border-radius: 5px;
     backdrop-filter: blur(10px);
 }
@@ -476,7 +476,7 @@ p{
 .label{
     font-size: 20px !important;
     margin: 0 !important;
-    color: whitesmoke !important;
+    color: rgba(245, 245, 245, 0.9) !important;
 }
 .textarea:not([rows]) {
     max-height: 40em !important;
@@ -631,7 +631,6 @@ p{
     .textBoxSection-2-1-1{
         font-size: 17px;
     }
-
     .boxSection-2-1{
         height: 360px;
         width: 300px;

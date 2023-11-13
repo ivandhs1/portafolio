@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { PdfDownloadService } from 'src/app/Services/pdf-download.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pdfService: PdfDownloadService) { }
 
   ngOnInit(): void {
   }
@@ -23,4 +24,8 @@ export class HeaderComponent implements OnInit {
       this.color='transparent'
     }
   } 
+
+  downloadPDF(){
+    this.pdfService.showPdf();
+  }
 }
